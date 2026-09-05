@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Lokendra Chouhan | BIWIL Lab | IIIT Surat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #003366; 
+            --accent: #d4af37; 
+            --alert: #c0392b;
+            --bg-light: #f8f9fa;
+            --text-dark: #2c3e50;
+            --text-muted: #546e7a;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--text-dark); background-color: #fff; scroll-behavior: smooth; }
+        
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Announcement Bar */
+        .announcement { background: var(--alert); color: white; padding: 10px 0; text-align: center; font-weight: bold; font-size: 0.9rem; position: sticky; top: 0; z-index: 1001; }
+
+        /* Navigation */
+        nav { background: #fff; padding: 1rem 0; position: sticky; top: 40px; z-index: 1000; border-bottom: 1px solid #eee; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .nav-content { display: flex; justify-content: space-between; align-items: center; }
+        .nav-links a { text-decoration: none; color: var(--text-dark); margin-left: 20px; font-weight: 500; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Hero Section */
+        .hero { padding: 60px 0; background: linear-gradient(135deg, var(--primary) 0%, #001a33 100%); color: white; }
+        .hero-flex { display: flex; align-items: center; gap: 50px; flex-wrap: wrap; }
+        .hero-image img { width: 240px; height: 300px; border-radius: 10px; object-fit: cover; border: 3px solid rgba(255,255,255,0.2); }
+        .hero-text h1 { font-size: 2.4rem; margin-bottom: 10px; }
+        .scholar-link { background: var(--accent); color: #000 !important; padding: 8px 15px; border-radius: 5px; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+
+        section { padding: 60px 0; border-bottom: 1px solid #eee; }
+        h2 { font-size: 1.8rem; color: var(--primary); margin-bottom: 30px; border-left: 5px solid var(--accent); padding-left: 15px; }
+        h3 { margin: 25px 0 15px 0; color: var(--primary); font-size: 1.3rem; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+
+        /* Publications List Styling */
+        .pub-list { list-style: none; }
+        .pub-item { margin-bottom: 15px; padding-left: 30px; position: relative; font-size: 0.95rem; }
+        .pub-item::before { content: "\f15c"; font-family: "Font Awesome 5 Free"; font-weight: 900; position: absolute; left: 0; color: var(--accent); }
+        .my-name { font-weight: bold; text-decoration: underline; color: #000; }
+        .doi { font-family: monospace; color: var(--alert); font-size: 0.85rem; }
+
+        /* Lab & Vacancy */
+        .lab-box { background: var(--bg-light); padding: 30px; border-radius: 10px; margin: 20px 0; border: 1px solid #eee; }
+        .vacancy-card { border: 2px dashed var(--alert); background: #fff5f5; padding: 25px; border-radius: 10px; }
+
+        /* Grid */
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: white; padding: 20px; border: 1px solid #eee; border-radius: 8px; }
+
+        footer { background: #001a33; color: white; padding: 40px 0; text-align: center; font-size: 0.9rem; }
+
+        @media (max-width: 768px) {
+            .hero-flex { flex-direction: column; text-align: center; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="announcement">
+    🚀 VACANCY: JRF Position Open at BIWIL Lab - Submit SoP to Apply
+</div>
+
+<nav>
+    <div class="container nav-content">
+        <div style="font-weight: bold; font-size: 1.1rem; color: var(--primary);">Dr. Lokendra Chouhan</div>
+        <div class="nav-links">
+            <a href="#lab">Lab</a>
+            <a href="#publications">Publications</a>
+            <a href="#teaching">Teaching</a>
+            <a href="#team">Team</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<header class="hero">
+    <div class="container hero-flex">
+        <div class="hero-image">
+            <img src="profile.jpg" alt="Dr. Lokendra Chouhan">
+        </div>
+        <div class="hero-text">
+            <h1>Dr. Lokendra Chouhan, <span style="font-size: 1.3rem; color: var(--accent);">SMIEEE</span></h1>
+            <p>Assistant Professor | IIIT Surat<br>Principal Investigator, BIWIL Lab</p>
+            <div style="margin-top: 20px;">
+                <a href="https://scholar.google.com/citations?user=3o7e4qYAAAAJ&hl=en" target="_blank" class="scholar-link"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    
+    <section id="lab">
+        <h2>Bio-Inspired Wireless Communication Lab (BIWIL)</h2>
+        <div class="lab-box">
+            <p><strong>Establishment:</strong> Funded by ANRF under the Prime Minister Early Career Grant (PMECRG).</p>
+            <p>Our lab focuses on Molecular Communication, 6G Wireless Systems, and Bio-inspired networking frameworks for wave-denied environments.</p>
+        </div>
+        
+        <div class="vacancy-card" id="vacancy">
+            <h4 style="color: var(--alert);">Junior Research Fellow (JRF) Position</h4>
+            <p>Seeking highly motivated candidates for research in Molecular Communications. <strong>To apply:</strong> Please send your CV and a <strong>Statement of Purpose (SoP)</strong> to the email below.</p>
+        </div>
+    </section>
+
+    <!-- EXPLICIT PUBLICATIONS SECTION -->
+    <section id="publications">
+        <h2>Publications</h2>
+
+        <h3>Journals</h3>
+        <ul class="pub-list">
+            <li class="pub-item"><span class="my-name">Lokendra Chouhan</span> and Mohamed-Slim Alouini, “Interfacing of Molecular Communication System with Various Communication Systems over Internet of Every Nano Things”, IEEE Internet of Things Journal, 2023.</li>
+            <li class="pub-item"><span class="my-name">Lokendra Chouhan</span>, M. -S. Alouini, “Rescaled Brownian Motion of Molecules and Devices in Three-Dimensional Multiuser Mobile Molecular Communication Systems”, IEEE Transactions on Wireless Communications, vol. 21, no. 12, 2022.</li>
+            <li class="pub-item"><span class="my-name">Lokendra Chouhan</span>, Prabhat Kumar Sharma and Neeraj Varshney, “Optimal Transmitted Molecules and Decision Threshold for Drift-Induced Diffusive Molecular Channel With Mobile Nanomachines”, IEEE Transactions on NanoBioscience, vol. 18, no. 4, 2019.</li>
+            <li class="pub-item"><span class="my-name">Lokendra Chouhan</span>, Prabhat Kumar Sharma, and Neeraj Varshney, “On Gradient Descent Optimization in Diffusion-Advection based 3-D Molecular Cooperative Communication”, IEEE Transactions on NanoBioscience, 2020.</li>
+            <li class="pub-item"><span class="my-name">Lokendra Chouhan</span>, Prabhat Kumar Sharma, Prabhat K Upadhyay, and Parul Garg, “Impacts of Unintended Nanomachine in Diffusion-based Molecular Communication System”, IEEE Transactions on MBMC, Vol. 6, 2020.</li>
+            <li class="pub-item"><span class="my-name">Lokendra Chouhan</span>, Prabhat Kumar Sharma, and Adam Noel, “Molecular Communication in Fractional Diffusive Channel”, IEEE Communications Letters, 2020.</li>
+            <li class="pub-item">Shivani Dhok, <span class="my-name">Lokendra Chouhan</span>, Adam Noel, and Prabhat Kumar Sharma, “Cooperative Molecular Communication in Drift-Induced Diffusive Cylindrical Channel”, IEEE Transactions on MBMC, 2021.</li>
+            <li class="pub-item"><span class="my-name">Lokendra Chouhan</span>, Prabhat Kumar Sharma, “Molecular Communication in Three-Dimensional Diffusive Channel with Mobile Nanomachines”, Elsevier Nano Communication Networks, Vol. 24, 2020.</li>
+            <li class="pub-item"><span class="my-name">Lokendra Chouhan</span>, Prabhat Kumar Upadhyay, “Effect of Time-Dependent Drift and Diffusion in Molecular Communication Systems”, IEEE Communications Letters, 2022.</li>
+            <li class="pub-item"><span class="my-name">Lokendra Chouhan</span>, Prabhat Kumar Upadhyay, “Time-Scaled Brownian Motion of Transmitter and Receiver in Anomalous-Diffusive Molecular Communication Channel”, IEEE Transactions on MBMC, vol 8, 2022.</li>
+            <li class="pub-item">Nadezhda Briantceva, <span class="my-name">Lokendra Chouhan</span>, Matteo Parsani, and Mohamed-Slim Alouini, “Impact of Evanescence Process on Three-Dimensional Sub-Diffusion based Molecular Communication Channel”, IEEE Transactions on NanoBioscience, 2023.</li>
+            <li class="pub-item"><span class="my-name">Lokendra Chouhan</span>, “Impact of Anomalous Diffusion Phenomenon on Molecular Information Delivery in Bounded Environment”, IEEE Transactions on NanoBioscience, 2024.</li>
+            <li class="pub-item">Neha Bhusari, Prabhat Kumar Sharma, <span class="my-name">Lokendra Chouhan</span>, and Avinash G. Keskar, “Molecular Communication over Anomalous Spatio-temporal Diffusive Channels”, IEEE Communications Letters, Oct 2025.</li>
+            <li class="pub-item">Sai Sowkhya Dasari, <span class="my-name">Lokendra Chouhan</span>, et al., “Localization of Nanomachines in Anomalous Diffusion Based Molecular Communication”, IEEE Transactions on MBMC, 2025.</li>
+            <li class="pub-item">T. Sai Krishna Charitha, <span class="my-name">Lokendra Chouhan</span>, et al., “Molecular Communication in Bounded Spherical Region with Anomalous Diffusion Phenomenon”, IEEE Transactions on MBMC, 2025.</li>
+        </ul>
+
+        <h3>Conferences</h3>
+        <ul class="pub-list">
+            <li class="pub-item">L. Chouhan, P. K. Sharma, et al., “Insights Into the Communication Performance of Interneuron Synaptic Interactions”, NCC, 2025.</li>
+            <li class="pub-item">Nadezhda Briantceva, <span class="my-name">Lokendra Chouhan</span>, et al., “Mobile Sub-diffusion Molecular Communication Channel”, ACM NANOCOM, 2023.</li>
+            <li class="pub-item">Nadezhda Briantceva, <span class="my-name">Lokendra Chouhan</span>, et al., “Evanescence reaction in subdiffusion molecular communication channel”, ACM NANOCOM, 2022.</li>
+            <li class="pub-item">Prabhat Kumar Sharma, <span class="my-name">Lokendra Chouhan</span>, “Performance Analysis of Diffusive Molecular Communication in Three Dimensional Channel”, Asia Pacific Radio Science Conference (URSI AP-RASC), New Delhi, 2019.</li>
+            <li class="pub-item">Jayneel Panjwani, <span class="my-name">Lokendra Chouhan</span>, “Energy-Efficient Neuromorphic Computing for 6G IoT Networks”, IEEE ANTS, 2025.</li>
+            <li class="pub-item">Ankur Raj, H. Upadhyay, M. V. Katwe, <span class="my-name">Lokendra Chouhan</span>, et al., “Deep Unfolded Hybrid Beamforming for NOMA-Enabled Joint Sensing and Communication”, IEEE WCNC, 2026.</li>
+            <li class="pub-item">Shrijeet Kumar, H. Ullamgunta, <span class="my-name">Lokendra Chouhan</span>, et al., “Modality-Specific α-Fusion for EEG-Based Attention Decoding”, IEEE NCC, 2026.</li>
+        </ul>
+
+        <h3>Book Chapters</h3>
+        <ul class="pub-list">
+            <li class="pub-item">Abhinav, <span class="my-name">Lokendra Chouhan</span>, P. Sharma, “Range Expansion in Neuro-spike Synaptic Communication: Error Performance Analysis”, Bio-inspired Information and Communications Technologies (BICT), Springer, 2023.</li>
+        </ul>
+    </section>
+
+    <section id="teaching">
+        <h2>Teaching</h2>
+        <div class="grid-3">
+            <div class="card"><strong>Signals and Systems</strong></div>
+            <div class="card"><strong>Wireless Communications</strong></div>
+            <div class="card"><strong>IoT</strong></div>
+            <div class="card"><strong>EMTL</strong></div>
+        </div>
+    </section>
+
+    <section id="team">
+        <h2>PhD Scholars</h2>
+        <div class="grid-3">
+            <div class="card"><h4>Mr. Prakash P.</h4></div>
+            <div class="card"><h4>Mr. Naveen Saini</h4></div>
+            <div class="card"><h4>Mr. Arun V. M.</h4></div>
+            <div class="card"><h4>Mr. Mahesh Nagarappu</h4></div>
+        </div>
+    </section>
+
+</div>
+
+<footer id="contact">
+    <div class="container">
+        <h3>Contact</h3>
+        <p>Indian Institute of Information Technology (IIIT) Surat</p>
+        <p>Email: <strong>lokendrachouhan22@gmail.com</strong></p>
+        <p style="margin-top: 20px; opacity: 0.5;">&copy; 2026 Dr. Lokendra Chouhan</p>
+    </div>
+</footer>
+
+</body>
+</html>
